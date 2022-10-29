@@ -179,7 +179,7 @@ section {
   padding: 0.5em;
   font-size: 4rem;
   color: #eee;
-  background: none;
+  background: transparent;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
   z-index: 101;
@@ -427,7 +427,7 @@ footer {
   background-color: rgb(47, 47, 47);
 }
 footer p {
-  margin-left: 1em;
+  margin-left: 2em;
   color: rgb(204, 201, 201);
 }
 
