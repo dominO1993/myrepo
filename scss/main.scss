@@ -2,12 +2,14 @@
 @use 'reset.scss';
 @use 'mixins.scss';
 @use 'animista.scss';
+@use 'colors';
+@use 'nav';
 
 body {
 	width: 100%;
 	font-size: 1.6rem;
 	// font-family: 'Raleway', sans-serif;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Poppins', sans-serif;
 	background-color: rgb(227, 223, 223);
 }
 
@@ -21,8 +23,6 @@ section {
 	position: relative;
 	top: 0;
 	left: 0;
-	display: flex;
-	justify-content: flex-end;
 	background-color: none;
 	z-index: 100;
 
@@ -34,7 +34,7 @@ section {
 		margin-left: auto;
 		padding: 0.5em;
 		font-size: 4rem;
-		color: #eee;
+		color: colors.$white-color;
 		background: transparent;
 		transition: color 0.3s;
 		z-index: 101;
@@ -64,10 +64,11 @@ section {
 
 		a {
 			padding: 1em 2em;
-			font-size: 2rem;
+			font-size: 2.6rem;
 			color: #444;
 			text-transform: uppercase;
 			font-weight: bold;
+			transition: width 0.3s;
 		}
 	}
 
@@ -103,7 +104,7 @@ section {
 		padding: 0 1em;
 		height: 100%;
 		font-family: 'Kaushan Script', cursive;
-		color: #fff;
+		color: colors.$white-color;
 		text-align: center;
 		text-shadow: 2px 2px 2px rgb(145, 145, 145);
 		z-index: 1;
@@ -112,19 +113,41 @@ section {
 			margin-bottom: 0.5em;
 
 			span {
-				color: rgb(200, 52, 52);
-				text-shadow: 2px 2px 2px rgb(206, 109, 109);
+				color: colors.$main-color;
+				text-shadow: 2px 2px 2px rgb(75, 29, 29);
 			}
 		}
 
 		&-btn {
+			position: relative;
 			margin-top: 2em;
 			padding: 0.4em 1em;
 			color: #fff;
 			font-size: 2rem;
 			border: 1px solid #fff;
 			border-radius: 5px;
+			text-shadow: none;
 			cursor: pointer;
+		}
+
+		&-btn::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+			transition: height 0.3s, color 0.3s, background-color 0.3s;
+		}
+
+		&-btn:hover::before {
+			height: 100%;
+			background-color: colors.$white-color;
+		}
+
+		&-btn:hover {
+			color: rgb(65, 65, 65);
 		}
 	}
 }
@@ -165,6 +188,7 @@ section {
 		&-item {
 			padding: 1em 0;
 			width: 50%;
+
 			text-transform: uppercase;
 			text-align: center;
 			transition: transform 0.3s;
@@ -319,9 +343,11 @@ footer {
 
 		.nav__desktop {
 			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
 			display: flex;
 			justify-content: flex-end;
-			width: 100%;
 			transition: background-color 0.3s;
 		}
 
@@ -330,7 +356,7 @@ footer {
 			margin: 0.8em 0.4em;
 			margin-right: 1em;
 			font-size: 2rem;
-			color: rgb(255, 255, 255);
+			color: colors.$white-color;
 			font-weight: bold;
 			z-index: 0;
 			transition: color 0.3s;
@@ -378,6 +404,7 @@ footer {
 			display: flex;
 			align-items: center;
 			padding: 0 2em;
+
 			&-text {
 				font-size: 2rem;
 				margin-right: 1em;
