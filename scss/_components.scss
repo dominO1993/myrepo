@@ -1,0 +1,26 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-title {
+	position: relative;
+	margin: 1.6em 0;
+	font-size: 4rem;
+	font-family: 'Kaushan Script', cursive;
+	color: #444;
+	text-align: center;
+}
+
+.section-title::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 50px;
+	background-color: rgb(206, 109, 109);
+	border-radius: 50%;
+}

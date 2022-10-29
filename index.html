@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Raleway:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/9db75eabe1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
+    <div class="nav__mobile">
+      <a href="#">home</a>
+      <a href="#about-me">O mnie</a>
+      <a href="#technology">Technologie</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+    <div class="nav__desktop">
+      <a href="#" class="nav__link">Home</a>
+      <a href="#about-me" class="nav__link">O mnie</a>
+      <a href="#technology" class="nav__link">Technologie</a>
+      <a href="#portfolio" class="nav__link">Portfolio</a>
+      <a href="#contact" class="nav__link">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header__bg"></div>
+    <div class="header__text">
+      <h1 class="header__text-title"><span>Cześć!</span> Jestem Jan Kowalski</h1>
+      <p class="header__text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, impedit.
+      </p>
+      <a href="#about-me" class="header__text-btn">Poznaj mnie!</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="aboutme wrapper" id="about-me">
+      <h2 class="section-title">O mnie</h2>
+
+      <div class="aboutme-box">
+        <p class="aboutme-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nisi labore commodi
+          debitis sapiente dolorem.
+          Optio, nam illum inventore dolore culpa, pariatur sed voluptates at eius distinctio quibusdam quas delectus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nostrum necessitatibus praesentium
+          assumenda fugiat officiis perspiciatis cumque sapiente in laboriosam quis quia tempora atque harum, possimus
+          tenetur reiciendis eum repellendus.
+        </p>
+
+        <img class="aboutme-box-img swing-in-top-fwd" src="./img/man-1866572_640.jpg" alt="Zdjęcie Jana Kowalskiego">
+      </div>
+    </section>
+
+    <section class="technology wrapper" id="technology">
+      <h2 class="section-title">Technologie</h2>
+      <div class="technology__boxes">
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-html5"></i>
+          <p>html</p>
+        </div>
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>css</p>
+        </div>
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-square-js"></i>
+          <p>javascript</p>
+        </div>
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-sass"></i>
+          <p>sass</p>
+        </div>
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-gulp"></i>
+          <p>gulp</p>
+        </div>
+        <div class="technology__boxes-item">
+          <i class="fa-brands fa-bootstrap"></i>
+          <p>bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio wrapper" id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio__items">
+        <div class="portfolio__item one">
+          <h3>projekt #1</h3>
+          
+        </div>
+        <div class="portfolio__item two">
+          <h3>projekt #2</h3>
+
+        </div>
+        <div class="portfolio__item three">
+          <h3>projekt #3</h3>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact__boxes">
+          <div class="contact__box one">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Miejsce zamieszkania</h3>
+            <p>ul. Sezamkowa 21</p>
+            <p>00-000 Kraków</p>
+          </div>
+          <div class="contact__box two">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Informacje kontaktowe</h3>
+            <p>adres@mailowy.com</p>
+            <p>+48 000 000 000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <p>&copy; Jan Kowalski 2022</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@mixin bottomLineText {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background-color: rgb(206, 109, 109);
+  transition: width 0.3s;
+  border-radius: 50%;
+  z-index: -1;
+}
