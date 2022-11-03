@@ -1,0 +1,88 @@
+.header {
+	position: relative;
+	background-image: url('/img/header-small.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 80vh;
+	z-index: 0;
+
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 0 1em;
+		height: 100%;
+		font-family: 'Kaushan Script', cursive;
+		color: rgb(227, 227, 227);
+		text-align: center;
+		text-shadow: 2px 2px 2px rgb(145, 145, 145);
+		z-index: 1;
+
+		&-title {
+			margin-bottom: 0.5em;
+
+			span {
+				color: rgb(200, 52, 52);
+				text-shadow: 2px 2px 2px rgb(75, 29, 29);
+			}
+		}
+
+		&-btn {
+			position: relative;
+			margin-top: 2em;
+			padding: 0.4em 1em;
+			color: #fff;
+			font-size: 2rem;
+			border: 1px solid #fff;
+			border-radius: 5px;
+			text-shadow: none;
+			cursor: pointer;
+		}
+
+		&-btn::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+			transition: height 0.3s, color 0.3s, background-color 0.3s;
+		}
+
+		&-btn:hover::before {
+			height: 100%;
+			background-color: rgb(227, 227, 227);
+		}
+
+		&-btn:hover {
+			color: rgb(65, 65, 65);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: url('/img/header-big.jpg');
+
+		&__text {
+			&-title {
+				font-size: 5rem;
+			}
+
+			&-description {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}

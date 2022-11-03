@@ -1,0 +1,299 @@
+.main {
+	.aboutme {
+		&-box {
+			&-text {
+				padding: 0 1.2em;
+				margin-bottom: 2em;
+				text-align: center;
+			}
+
+			&-img {
+				width: 100%;
+				height: 300px;
+				object-fit: cover;
+				object-position: top;
+				transition: transform 0.3s;
+			}
+
+			&-img:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	// technologia
+
+	.technology {
+		overflow: hidden;
+		&__boxes {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			&-item {
+				padding: 1em 0;
+				width: 50%;
+
+				text-transform: uppercase;
+				text-align: center;
+				transition: transform 0.3s;
+
+				p {
+					font-size: 2rem;
+					font-weight: bold;
+				}
+
+				.fa-brands {
+					margin-bottom: 0.3em;
+					font-size: 6rem;
+					text-shadow: 0 0 5px rgb(183, 183, 183);
+				}
+
+				.fa-html5 {
+					color: rgb(235, 82, 0);
+				}
+
+				.fa-css3-alt {
+					color: rgb(13, 106, 246);
+				}
+
+				.fa-square-js {
+					color: rgb(231, 212, 0);
+				}
+
+				.fa-sass {
+					color: rgb(250, 63, 234);
+				}
+
+				.fa-gulp {
+					color: rgb(255, 0, 0);
+				}
+
+				.fa-bootstrap {
+					color: rgb(134, 1, 206);
+				}
+			}
+
+			&-item:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	// portfolio
+
+	.portfolio {
+		&__cards {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__card {
+			position: relative;
+			width: 80%;
+			margin: 1em 0;
+			height: 300px;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: transform 0.5s;
+			perspective: 800px;
+
+			&-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+			}
+
+			.one,
+			.three {
+				background-color: rgb(206, 109, 109);
+			}
+
+			.two,
+			.four {
+				background-color: rgb(83, 83, 83);
+			}
+
+			&-text {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				text-align: center;
+				opacity: 0;
+				transform: rotateY(-180deg);
+			}
+		}
+
+		&__card:hover {
+			transform: rotateY(180deg);
+		}
+
+		&__card:hover .portfolio__card-text {
+			transform: rotateY(180deg);
+			opacity: 1;
+		}
+	}
+
+	// contact
+
+	.contact {
+		position: relative;
+		background-color: rgb(83, 83, 83);
+		border-top-left-radius: 20%;
+		border-top-right-radius: 20%;
+		padding-bottom: 1em;
+
+		.section-title {
+			padding-top: 1em;
+			color: #ddd;
+		}
+
+		&__boxes {
+			text-align: center;
+		}
+
+		&__box {
+			margin: 3em;
+			color: #ddd;
+
+			i {
+				margin-bottom: 0.5em;
+				font-size: 4rem;
+				color: rgb(206, 109, 109);
+			}
+
+			h3 {
+				font-size: 3rem;
+				margin-bottom: 0.3em;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.main {
+		.contact {
+			&__boxes {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		.aboutme {
+			&-box {
+				display: flex;
+				align-items: center;
+				padding: 0 2em;
+
+				&-text {
+					font-size: 2rem;
+					margin-right: 1em;
+					text-align: left;
+				}
+			}
+		}
+
+		.section-title {
+			font-size: 5rem;
+		}
+
+		.technology {
+			&__boxes {
+				justify-content: space-around;
+				&-item {
+					margin: 2em 0;
+					width: 33.33%;
+
+					.fa-brands {
+						font-size: 8rem;
+					}
+				}
+			}
+		}
+
+		.portfolio {
+			&__cards {
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			&__card {
+				margin: 1em;
+				width: 35%;
+			}
+
+			&__card:hover {
+				transform: rotateY(180deg);
+			}
+		}
+
+		.contact {
+			&__box {
+				i {
+					margin-bottom: 0.5em;
+					font-size: 6rem;
+					color: rgb(206, 109, 109);
+				}
+
+				h3 {
+					font-size: 3.6rem;
+					margin-bottom: 0.3em;
+				}
+
+				p {
+					font-size: 2.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.main {
+		.aboutme {
+			&-box {
+				&-img {
+					width: 100%;
+				}
+			}
+		}
+
+		.technology {
+			&__boxes {
+				&-item {
+					width: 16.66%;
+				}
+			}
+		}
+
+		.portfolio {
+			&__items {
+				justify-content: space-evenly;
+			}
+			&__item {
+				width: 30%;
+
+				h3 {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
