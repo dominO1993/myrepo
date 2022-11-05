@@ -415,7 +415,7 @@ a {
   color: rgb(13, 106, 246);
 }
 .main .technology__boxes-item .fa-square-js {
-  color: rgb(231, 212, 0);
+  color: rgb(219, 201, 2);
 }
 .main .technology__boxes-item .fa-sass {
   color: rgb(250, 63, 234);
@@ -496,8 +496,8 @@ a {
 .main .contact {
   position: relative;
   background-color: rgb(83, 83, 83);
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
   padding-bottom: 1em;
 }
 .main .contact .section-title {
@@ -623,7 +623,7 @@ a {
   background-color: rgb(47, 47, 47);
 }
 .footer p {
-  margin-left: 2em;
+  text-align: center;
   font-size: 2rem;
   color: rgb(204, 201, 201);
 }

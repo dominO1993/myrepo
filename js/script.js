@@ -4,7 +4,7 @@ const navMobile = document.querySelector('.nav__mobile');
 const allNavMobileItems = document.querySelectorAll('.nav__mobile a');
 const navLink = document.querySelectorAll('.nav__link');
 const footerYear = document.querySelector('.footer__year');
-const allSections = document.querySelectorAll('section');
+const allSections = document.querySelectorAll('.section');
 const aboutImg = document.querySelector('.aboutme-box-img');
 
 const handleNav = () => {
