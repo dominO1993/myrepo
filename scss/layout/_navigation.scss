@@ -18,8 +18,8 @@
 		transition: color 0.3s;
 		z-index: 101;
 
-		&--dark {
-			color: #222;
+		&--dark, &--dark-section {
+			color: #444;
 		}
 	}
 
@@ -58,7 +58,7 @@
 
 @media (min-width: 768px) {
 	.nav {
-		background-color: #fff;
+		// background-color: #fff;
 
 		&--transparent {
 			background-color: rgba(184, 182, 182, 0.7);
@@ -75,7 +75,7 @@
 			top: 0;
 			width: 100%;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			transition: background-color 0.3s;
 		}
 

@@ -1,6 +1,6 @@
 @use 'base/reset';
 @use 'components/components';
-@use 'mixins.scss';
+@use 'mixins';
 @use 'animista';
 @use 'colors';
 @use 'layout/navigation';
@@ -13,6 +13,7 @@ body {
 	font-size: 1.6rem;
 	font-family: 'Poppins', sans-serif;
 	background-color: rgb(227, 223, 223);
+	z-index: -1;
 }
 
 section {
@@ -21,12 +22,7 @@ section {
 
 // footer
 
-
-
 // MEDIA
 //
 //
 //
-
-
-

@@ -167,8 +167,8 @@ a {
   transition: color 0.3s;
   z-index: 101;
 }
-.nav__burger--dark {
-  color: #222;
+.nav__burger--dark, .nav__burger--dark-section {
+  color: #444;
 }
 .nav__mobile {
   display: -webkit-box;
@@ -215,9 +215,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .nav {
-    background-color: #fff;
-  }
   .nav--transparent {
     background-color: rgba(184, 182, 182, 0.7);
   }
@@ -233,9 +230,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
@@ -620,13 +617,14 @@ a {
     font-size: 3rem;
   }
 }
-footer {
+.footer {
   padding: 2em 0;
   width: 100%;
   background-color: rgb(47, 47, 47);
 }
-footer p {
+.footer p {
   margin-left: 2em;
+  font-size: 2rem;
   color: rgb(204, 201, 201);
 }
 
@@ -635,6 +633,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   background-color: rgb(227, 223, 223);
+  z-index: -1;
 }
 
 section {

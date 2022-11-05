@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="dist/hamburgers.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/9db75eabe1.js" crossorigin="anonymous"></script>
 </head>
@@ -16,27 +17,30 @@
 <body>
 
   <nav class="nav">
-    <div class="wrapper">
-      <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
-      <div class="nav__mobile">
-        <a href="#">home</a>
-        <a href="#about-me">O mnie</a>
-        <a href="#technology">Technologie</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Kontakt</a>
-      </div>
-      <div class="nav__desktop">
-        <a href="#" class="nav__link">Home</a>
-        <a href="#about-me" class="nav__link">O mnie</a>
-        <a href="#technology" class="nav__link">Technologie</a>
-        <a href="#portfolio" class="nav__link">Portfolio</a>
-        <a href="#contact" class="nav__link">Kontakt</a>
-      </div>
-    </div>
 
+    <button class="nav__burger"><i class="fa-solid fa-bars"></i></button>
+    <!-- <button class="hamburger hamburger--3dx is-active" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button> -->
+    <div class="nav__mobile">
+      <a href="#">home</a>
+      <a href="#about-me">O mnie</a>
+      <a href="#technology">Technologie</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+    <div class="nav__desktop">
+      <a href="#" class="nav__link">Home</a>
+      <a href="#about-me" class="nav__link">O mnie</a>
+      <a href="#technology" class="nav__link">Technologie</a>
+      <a href="#portfolio" class="nav__link">Portfolio</a>
+      <a href="#contact" class="nav__link">Kontakt</a>
+    </div>
   </nav>
 
-  <header class="header">
+  <section class="header">
     <div class="header__bg"></div>
     <div class="header__text">
       <h1 class="header__text-title"><span>Cześć!</span> Jestem Jan Kowalski</h1>
@@ -44,10 +48,10 @@
       </p>
       <a href="#about-me" class="header__text-btn">Poznaj mnie!</a>
     </div>
-  </header>
+  </section>
 
   <main class="main">
-    <section class="aboutme wrapper" id="about-me">
+    <section class="aboutme wrapper white-section" id="about-me">
       <h2 class="section-title">O mnie</h2>
 
       <div class="aboutme-box">
@@ -59,11 +63,11 @@
           tenetur reiciendis eum repellendus.
         </p>
 
-        <img class="aboutme-box-img swing-in-top-fwd" src="./img/man-1866572_640.jpg" alt="Zdjęcie Jana Kowalskiego">
+        <img class="aboutme-box-img swing-in-top-fwd dark-section" src="./img/man-1866572_640.jpg" alt="Zdjęcie Jana Kowalskiego">
       </div>
     </section>
 
-    <section class="technology wrapper" id="technology">
+    <section class="technology wrapper white-section" id="technology">
       <h2 class="section-title">Technologie</h2>
       <div class="technology__boxes">
         <div class="technology__boxes-item">
@@ -93,7 +97,7 @@
       </div>
     </section>
 
-    <section class="portfolio wrapper" id="portfolio">
+    <section class="portfolio wrapper white-section" id="portfolio">
       <h2 class="section-title">Portfolio</h2>
 
       <div class="portfolio__cards">
@@ -151,9 +155,9 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="wrapper">
-      <p>&copy; Jan Kowalski 2022</p>
+      <p>&copy; Jan Kowalski <span class="footer__year"></span></p>
     </div>
   </footer>
 
